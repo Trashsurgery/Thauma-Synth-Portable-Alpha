@@ -998,7 +998,7 @@ That's all there is to it!
 
 
 ==============================================================================
-Vidvox ISF-Files (shaders in custom-shaders; see custom-shaders/CREDITS.txt) - MIT licence
+Vidvox ISF-Files (shaders in custom-shaders and shape-shaders; see the CREDITS.txt in each) - MIT licence
 Source: https://github.com/Vidvox/ISF-Files
 ==============================================================================
 
@@ -1082,7 +1082,7 @@ SOFTWARE.
 
 
 ==============================================================================
-ProjectileObjects MiscISFShaders (shaders in custom-shaders) - MIT licence
+ProjectileObjects MiscISFShaders (shaders in custom-shaders and shape-shaders) - MIT licence
 Source: https://github.com/ProjectileObjects/MiscISFShaders
 ==============================================================================
 
@@ -1110,7 +1110,7 @@ SOFTWARE.
 
 
 ==============================================================================
-darosh px-stream (shaders in custom-shaders) - MIT licence (dual MIT or CC BY 4.0; Thauma uses MIT)
+darosh px-stream (shaders in shape-shaders) - MIT licence (dual MIT or CC BY 4.0; Thauma uses MIT)
 Source: https://github.com/darosh/px-stream
 ==============================================================================
 
@@ -1179,7 +1179,10 @@ SOFTWARE.
 
 ==============================================================================
 pixi-filters (the Rush, Whirl and Grade effects follow its zoom-blur, twist and adjustment
-filters) - MIT licence
+filters; the Nitrate effect takes its old-film sepia overlay and vignetting; the Tincture effect
+reads its maps as the color-map filter does, the Swish effect follows its radial-blur and
+motion-blur filters, and the Pebble effect its shockwave filter, those four read at commit
+e9d1ca987864f121680bb0d7e9612c05b37748de) - MIT licence
 Source: https://github.com/pixijs/filters
 ==============================================================================
 
@@ -1214,6 +1217,358 @@ Source: https://github.com/rommix0/rasterwarp
 MIT License
 
 Copyright (c) 2026 Anthony C. Bartman
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+
+==============================================================================
+webgl-noise (the simplex noise inside shape-shaders/Ridgelines.fs and
+transitions/luminance_melt.fs, carried in by their authors) - MIT licence
+Source: https://github.com/stegu/webgl-noise (first published as ashima/webgl-noise)
+==============================================================================
+
+Copyright (C) 2011 by Ashima Arts (Simplex noise)
+Copyright (C) 2011-2016 by Stefan Gustavson (Classic noise and others)
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+THE SOFTWARE.
+
+
+==============================================================================
+glsl-dither (the 8x8 dither inside custom-shaders/Stylize Glitch.fs, carried in
+by VIDVOX) - MIT licence
+Source: https://github.com/hughsk/glsl-dither
+==============================================================================
+
+Copyright (c) Hugh Kennedy (http://hughsk.io/)
+
+This software is released under the MIT license:
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of
+this software and associated documentation files (the "Software"), to deal in
+the Software without restriction, including without limitation the rights to
+use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of
+the Software, and to permit persons to whom the Software is furnished to do so,
+subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS
+FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR
+COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER
+IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
+CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+
+==============================================================================
+glsl-fast-gaussian-blur (the Veil and Tilt effects use its 13-tap Gaussian weights) - MIT
+licence
+Source: https://github.com/Experience-Monks/glsl-fast-gaussian-blur
+==============================================================================
+
+The MIT License (MIT)
+Copyright (c) 2015 Jam3
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
+IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM,
+DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR
+OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE
+OR OTHER DEALINGS IN THE SOFTWARE.
+
+
+==============================================================================
+crt-lottes from libretro glsl-shaders, crt/shaders/crt-lottes.glsl (the Phosphor effect's curve
+and phosphor stripes) - public domain
+Source: https://github.com/libretro/glsl-shaders (commit 148ce728155232a6b63be772c1810bd84728f359)
+==============================================================================
+
+PUBLIC DOMAIN CRT STYLED SCAN-LINE SHADER
+
+  by Timothy Lottes
+
+This is more along the style of a really good CGA arcade monitor.
+With RGB inputs instead of NTSC.
+The shadow mask example has the mask rotated 90 degrees for less chromatic aberration.
+
+Left it unoptimized to show the theory behind the algorithm.
+
+It is an example what I personally would want as a display option for pixel art games.
+Please take and use, change, or whatever.
+
+
+==============================================================================
+crt-hyllian from libretro glsl-shaders, crt/shaders/hyllian/crt-hyllian.glsl (the Phosphor
+effect's beam rows, wider where they are bright) - MIT licence
+Source: https://github.com/libretro/glsl-shaders (commit 148ce728155232a6b63be772c1810bd84728f359)
+==============================================================================
+
+Hyllian's CRT Shader
+
+Copyright (C) 2011-2020 Hyllian - sergiogdb@gmail.com
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+THE SOFTWARE.
+
+
+==============================================================================
+crt-geom-mini from libretro glsl-shaders, crt/shaders/crt-geom-mini.glsl (the Phosphor effect's
+rounded corners) - MIT licence
+Source: https://github.com/libretro/glsl-shaders (commit 148ce728155232a6b63be772c1810bd84728f359)
+==============================================================================
+
+CRT-Geom replica by DariusG 2024-2026.
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+THE SOFTWARE.
+
+
+==============================================================================
+tiny_ntsc from libretro glsl-shaders, ntsc/shaders/ntsc-simple/tiny_ntsc.glsl (the Dropout
+effect's colour carrier and its colour axes) - MIT licence
+Source: https://github.com/libretro/glsl-shaders (commit 148ce728155232a6b63be772c1810bd84728f359)
+==============================================================================
+
+TINY_NTSC DariusG 2025-2026
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+THE SOFTWARE.
+
+
+==============================================================================
+film_noise from libretro glsl-shaders, film/shaders/film_noise.glsl (the Nitrate effect's bright
+middle) - public domain
+Source: https://github.com/libretro/glsl-shaders (commit 148ce728155232a6b63be772c1810bd84728f359)
+==============================================================================
+
+film noise
+by hunterk
+license: public domain
+
+
+==============================================================================
+ntsc-rs (the Dropout effect follows its order of steps, snow, head switching, tracking noise,
+edge wave, colour phase and colour loss) - MIT licence (offered as MIT, ISC or Apache-2.0;
+Thauma uses MIT)
+Source: https://github.com/valadaptive/ntsc-rs (commit 8cfc51014092a6dc1da5eb0217bb9ae6516b124e,
+crates/ntscrs)
+==============================================================================
+
+This license applies to all source files except those under /crates/gui.
+
+Copyright © valadaptive
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the “Software”), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+
+==============================================================================
+KinoGlitch (the Judder effect's scan-line tear, roll, shake and colour drift; the Scramble
+effect's strips of random blocks, their thresholds, trash frames and colour shuffle) - MIT licence
+Source: https://github.com/keijiro/KinoGlitch (commit e102950361c260aba8967d55f14212b5a70f4cce)
+==============================================================================
+
+Copyright (C) 2015 Keijiro Takahashi
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of
+this software and associated documentation files (the "Software"), to deal in
+the Software without restriction, including without limitation the rights to
+use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of
+the Software, and to permit persons to whom the Software is furnished to do so,
+subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS
+FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR
+COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER
+IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
+CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+
+==============================================================================
+Kino by Keijiro Takahashi, Packages/jp.keijiro.kino.post-processing/Resources/Glitch.hlsl (the
+Scramble effect's whole-block damage; the slope of Judder's colour drift down the screen),
+Streak.shader (the Lance effect's streaks), Recolor.hlsl (the Inkwash effect's ink ramp, dither and
+edge line), Slice.shader (the Shear effect's sliding strips) and Sharpen.shader (the Hone effect's
+sharpening) - Unlicense (public domain; no notice is required, credited anyway)
+Source: https://github.com/keijiro/Kino (commit 2e0dff770d98ff1c4df9290d865ef27395d2061c)
+==============================================================================
+
+Kino's README gives its licence as the Unlicense (https://unlicense.org/):
+
+This is free and unencumbered software released into the public domain.
+
+Anyone is free to copy, modify, publish, use, compile, sell, or distribute this
+software, either in source code form or as a compiled binary, for any purpose,
+commercial or non-commercial, and by any means.
+
+
+==============================================================================
+KinoDatamosh by Keijiro Takahashi, Assets/Kino/Datamosh/Shader/Datamosh.shader and Datamosh.cs
+(the Mire effect's stale picture carried by each block's motion times a velocity scale, with a small
+displacement of its own; its noise of block-transform bases through which the live picture shows)
+- MIT licence, as the header of both files states (the repository's LICENSE file gives the
+Unlicense; Thauma follows the files' own headers)
+Source: https://github.com/keijiro/KinoDatamosh (commit 81e0201b68750f3cb23d7c4acb9c392faca22c83)
+==============================================================================
+
+Kino/Datamosh - Glitch effect simulating video compression artifacts
+
+Copyright (C) 2016 Keijiro Takahashi
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+THE SOFTWARE.
+
+
+==============================================================================
+WebGL-Fluid-Simulation by Pavel Dobryakov, script.js (the Shafts effect's sun rays: the sunrays
+shader's march towards the light with its decay) - MIT licence
+Source: https://github.com/PavelDoGreat/WebGL-Fluid-Simulation (commit a2d292931f19d9b3b9f564e23e6c32729d2121c3)
+==============================================================================
+
+MIT License
+
+Copyright (c) 2017 Pavel Dobryakov
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+
+==============================================================================
+krotala-core by Athron (the sound analysis's hit finding: the Sharp kick and the Snare and Hats
+movers, src/sound_hits.cpp; Listen's tempo, src/tempo_listen.cpp; and Follow's OSC contract,
+src/follow.*; the XY pad's puck, src/xy_pad.cpp; implemented in Thauma's own code) - MIT licence
+Source: Athron's Krotala project, core/ (MIT; the rest of Krotala is not used)
+==============================================================================
+
+MIT License
+
+Copyright (c) 2026 Athron
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal

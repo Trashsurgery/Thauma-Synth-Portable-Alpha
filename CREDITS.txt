@@ -1,0 +1,54 @@
+Thauma: credits
+===============
+
+Thauma's own code, shaders, looks and documents are by Athron (MIT, see LICENSE). This file
+names, in plain words, every piece of other people's work that Thauma uses or learned from,
+and where its licence is. The full text of every licence is in THIRD-PARTY-LICENSES.txt.
+Shader packs that ship as whole files keep their authors' headers and have a CREDITS.txt of
+their own in their folder (custom-shaders/, transitions/, testdata/isf-tests/).
+
+Libraries linked into Thauma
+----------------------------
+GLFW (window and input), zlib/libpng licence
+GLEW (OpenGL loading), modified BSD, MIT and Khronos licences
+Spout2 (sharing the picture with other programs), BSD 2-Clause
+nlohmann/json (reading and writing looks and settings), MIT
+RtMidi (MIDI), MIT-style licence
+MinGW-w64 winpthreads and the GCC runtime, their own permissive licences (texts in the licence file)
+Dear ImGui (the control panel), MIT
+Quicksand font, SIL Open Font Licence (Fonts/OFL.txt)
+FFmpeg (reading video files), LGPL 2.1 or later, built without any GPL parts; its source is in FFmpeg/source
+
+Maths and ideas inside Thauma's built-in effects
+------------------------------------------------
+Each borrowed function carries a one-line credit in the shader above it.
+Rush, Whirl, Grade: pixi-filters (zoom-blur, twist, adjustment), MIT
+Strata: rasterwarp (colorize banding), MIT
+Veil, Tilt: glsl-fast-gaussian-blur (13-tap Gaussian weights), MIT
+Phosphor: crt-lottes (public domain), crt-hyllian (MIT) and crt-geom-mini (MIT) from the libretro
+    glsl-shaders collection, permissive files only
+Nitrate: pixi-filters old-film (MIT); film_noise from libretro glsl-shaders (public domain)
+Dropout: ntsc-rs (MIT); tiny_ntsc from libretro glsl-shaders (MIT)
+Judder, Scramble: KinoGlitch by Keijiro Takahashi (MIT); Kino by Keijiro Takahashi (Unlicense)
+Lance, Inkwash, Shear, Hone: Kino by Keijiro Takahashi (Unlicense)
+Shafts: WebGL-Fluid-Simulation by Pavel Dobryakov (sun rays), MIT
+Tincture, Swish, Pebble: pixi-filters (color-map, radial-blur, motion-blur, shockwave), MIT
+Mire: KinoDatamosh by Keijiro Takahashi, MIT as its file headers state
+
+Maths inside Thauma's sound analysis and controls
+------------------------------------------------
+Sharp kick, Snare and Hats: the hit finding of krotala-core (Athron's Krotala project), MIT
+Listen (the tempo by ear): the tempo finding of krotala-core, MIT
+Follow Krotala: the OSC contract of krotala-core, MIT; receiver implemented in Thauma
+XY pad puck (src/xy_pad.cpp): ported from krotala-core, MIT, Copyright (c) 2026 Athron
+Only the MIT core is used; none of Krotala's GPL app code. One complete notice covers these uses.
+
+Pieces carried inside shipped shaders
+-------------------------------------
+webgl-noise (simplex noise inside two shader-pack files), MIT, Ashima Arts and Stefan Gustavson
+glsl-dither (an 8x8 dither inside one shader-pack file), MIT
+
+Thanks and inspiration
+----------------------
+README.txt lists the open-source projects and papers Thauma learned ideas from without taking
+their code. The names above belong to their owners; none of them made or endorse Thauma.
