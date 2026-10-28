@@ -206,7 +206,7 @@ load as before, and Ctrl+F finds a control by either name.
 
 ### Looks
 
-- **17 starter looks** ship with this download. Looks that need a video clip are left out.
+- **30 looks** ship with this download: Athron's own looks and the starter looks he kept. Looks that need a video clip are left out.
 
 ### Stability
 
@@ -331,7 +331,7 @@ change, so modulators never strobe.
 
 ### Looks
 
-A **look** is a saved picture setup. Thauma comes with 17 starter looks.
+A **look** is a saved picture setup. Thauma comes with 30 looks: Athron's own and the starter looks he kept.
 
 - Save (Ctrl+S), save as new (Ctrl+Shift+S), and step through looks (Page Up / Page Down).
 - Looks fade into each other. Right-click a look on the Looks page to give it a
