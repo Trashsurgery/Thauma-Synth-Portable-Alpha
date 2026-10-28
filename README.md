@@ -206,9 +206,7 @@ load as before, and Ctrl+F finds a control by either name.
 
 ### Looks
 
-- **Athron's own looks now ship with the starter looks:** 33 looks in all. Where his version of
-  a starter look exists (Four Blends, Timeslice), his is the one you get. Looks that need a video
-  clip are left out of this download.
+- **17 starter looks** ship with this download. Looks that need a video clip are left out.
 
 ### Stability
 
@@ -248,7 +246,7 @@ tried with the real thing. Please tell Athron how yours behave.
 ## Download and run
 
 1. Go to **Releases** on the right of this page and download
-   `Thauma-Synth-Portable-Alpha-2026-10-25.zip`.
+   `Thauma-Synth-Portable-Alpha-2026-10-28.zip`.
 2. Unzip it anywhere you can write to: Desktop, Documents or a USB stick.
    **Not** `Program Files`: Thauma saves your looks and settings next to `Thauma.exe`.
 3. Open the `Thauma Synth` folder and double-click **`Thauma.exe`**.
@@ -333,8 +331,7 @@ change, so modulators never strobe.
 
 ### Looks
 
-A **look** is a saved picture setup. Thauma comes with 33 looks: 15 starter looks and 18 of
-Athron's own.
+A **look** is a saved picture setup. Thauma comes with 17 starter looks.
 
 - Save (Ctrl+S), save as new (Ctrl+Shift+S), and step through looks (Page Up / Page Down).
 - Looks fade into each other. Right-click a look on the Looks page to give it a
