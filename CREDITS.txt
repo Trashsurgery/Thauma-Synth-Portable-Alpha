@@ -17,6 +17,11 @@ RtMidi (MIDI), MIT-style licence
 MinGW-w64 winpthreads and the GCC runtime, their own permissive licences (texts in the licence file)
 Dear ImGui (the control panel), MIT
 Quicksand font, SIL Open Font Licence (Fonts/OFL.txt)
+Tabler Icons by Paweł Kuna (the panel's tool icons: copy, paste, swap and the like), MIT; 38 of them
+    are built into the exe, the cut and its licence in third_party/tabler-icons/
+Theme fonts (the themes' lettering for names): 27 fonts under the SIL Open Font Licence, Permanent Marker
+    under the Apache License 2.0 and ProggyClean (Tristan Grimmer) under MIT; each listed with its notice
+    in THIRD-PARTY-LICENSES.txt, and each OFL notice beside its font in Fonts/
 FFmpeg (reading video files), LGPL 2.1 or later, built without any GPL parts; its source is in FFmpeg/source
 
 Maths and ideas inside Thauma's built-in effects
@@ -34,6 +39,14 @@ Lance, Inkwash, Shear, Hone: Kino by Keijiro Takahashi (Unlicense)
 Shafts: WebGL-Fluid-Simulation by Pavel Dobryakov (sun rays), MIT
 Tincture, Swish, Pebble: pixi-filters (color-map, radial-blur, motion-blur, shockwave), MIT
 Mire: KinoDatamosh by Keijiro Takahashi, MIT as its file headers state
+Spyhole, Dolly: Stoatworks Labs (Porthole, Vertigo), MIT
+Micro, Yoke, Loader, Squash: Stoatworks Labs (NESolume, (re)gauss, pilot, Compander), MIT; Micro's
+    fixed palettes are NESolume's palette tables
+Vessel, Tumbler: ideas after Vidvox ISF-Files (Circle Warp, Triangle Warp, Triple Rotate), MIT;
+    Thauma's own shaders, no code taken
+Marquee: ideas after Tinsel by Stoatworks Labs, MIT
+Oilwheel: ideas after Flenser (its lamp half) by Stoatworks Labs, MIT
+Shutter: maths after readout by Stoatworks Labs, MIT
 
 Maths inside Thauma's sound analysis and controls
 ------------------------------------------------

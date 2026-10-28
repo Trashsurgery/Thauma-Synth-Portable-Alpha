@@ -17,6 +17,14 @@ and please tell Athron what you find (see [Reporting problems](#reporting-proble
 
 ## What's new in this alpha
 
+**28 October feedback timing update:** feedback movement is steadier with the frame rate limit
+off and while the control panel updates. The main loop and loops 2–4 on the full engine share
+the corrected clock, which smooths uneven frames while keeping the loop's elapsed-time speed.
+The Frame budget display is also corrected, and measuring no longer waits for the graphics
+card. Existing look files and control assignments remain compatible.
+
+[Source change](https://github.com/Trashsurgery/Thauma-Synth/commit/3f2751be).
+
 This is a big update since the first alpha (17 October). In short:
 
 - more shapes, effects and feedback styles;
