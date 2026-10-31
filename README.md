@@ -17,6 +17,22 @@ and please tell Athron what you find (see [Reporting problems](#reporting-proble
 
 ## What's new in this alpha
 
+**30 October clip-library and show update:** combine several clip folders through
+**Folders... > Add folder...**, or drag several folders into the clip browser.
+Overlapping folders are deduplicated, and identically named clips remain distinct.
+
+- Clip tiles show their source folder when several folders are configured.
+- Both clip searches have an **X** clear button and an explicit no-matches message.
+- Includes video Start/End ranges, the recording destination chooser, master
+  Brightness/Contrast, composition transition controls, Halloween FX and transitions,
+  and enhanced transition variants.
+- **219 focused checks passed**, including the clip library, search controls,
+  playback, trim, toolbar, output controls, recording destination and FX page.
+- **44 compositions** ship with the portable. Personal settings, rigs, local media
+  and demo launchers are excluded.
+
+[Download this alpha](https://github.com/Trashsurgery/Thauma-Synth-Portable-Alpha/releases/tag/v2026.10.30-alpha-show-polish).
+
 **28 October feedback timing update:** feedback movement is steadier with the frame rate limit
 off and while the control panel updates. The main loop and loops 2–4 on the full engine share
 the corrected clock, which smooths uneven frames while keeping the loop's elapsed-time speed.
@@ -75,8 +91,8 @@ load as before, and Ctrl+F finds a control by either name.
 
 - **Clip browser** (Ctrl+O) shows your video folder as pictures. Drag a clip onto a shape to play
   it there, or use the pad actions for the next and previous clip.
-- **Choose your video folder** with "Choose folder..." at the top of the clip browser, or drag a
-  folder onto it. You can also **drag a video straight from File Explorer** onto a shape.
+- **Choose clip folders** with "Folders... > Add folder..." at the top of the clip browser,
+  or drag several folders onto it. You can also **drag a video straight from File Explorer** onto a shape.
 - **Looks find their clips on another computer** when the clips sit in the same place inside its
   video folder.
 - **Spout in.** A Video shape can play another program's Spout picture, and you choose which
@@ -214,7 +230,7 @@ load as before, and Ctrl+F finds a control by either name.
 
 ### Looks
 
-- **30 looks** ship with this download: Athron's own looks and the starter looks he kept. Looks that need a video clip are left out.
+- **44 looks** ship with this download: Athron's own looks and the starter looks he kept. Looks that need a video clip are left out.
 
 ### Stability
 
@@ -254,10 +270,10 @@ tried with the real thing. Please tell Athron how yours behave.
 ## Download and run
 
 1. Go to **Releases** on the right of this page and download
-   `Thauma-Synth-Portable-Alpha-2026-10-28.zip`.
+   `Thauma-Synth-Portable-Alpha-2026-10-30-Show-Polish.zip` from the latest release.
 2. Unzip it anywhere you can write to: Desktop, Documents or a USB stick.
    **Not** `Program Files`: Thauma saves your looks and settings next to `Thauma.exe`.
-3. Open the `Thauma Synth` folder and double-click **`Thauma.exe`**.
+3. Open the `Thauma` folder and double-click **`Thauma.exe`**.
 
 There is nothing to install and nothing is written outside that folder.
 
@@ -339,7 +355,7 @@ change, so modulators never strobe.
 
 ### Looks
 
-A **look** is a saved picture setup. Thauma comes with 30 looks: Athron's own and the starter looks he kept.
+A **look** is a saved picture setup. Thauma comes with 44 looks: Athron's own and the starter looks he kept.
 
 - Save (Ctrl+S), save as new (Ctrl+Shift+S), and step through looks (Page Up / Page Down).
 - Looks fade into each other. Right-click a look on the Looks page to give it a
@@ -459,7 +475,7 @@ Windows resets it, so try new shaders before a show, not during one.
 
 ## Your files
 
-Everything lives in the `Thauma Synth` folder:
+Everything lives in the `Thauma` folder:
 
 | | |
 |---|---|
