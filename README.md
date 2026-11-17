@@ -8,10 +8,9 @@ play it with the mouse, the keyboard and MIDI controllers.
 This is an **alpha**: an early build shared with a few friends to try out. Expect rough edges,
 and please tell Athron what you find (see [Reporting problems](#reporting-problems)).
 
-> **Photosensitivity warning.** Thauma makes moving, colourful, sometimes fast-changing
-> pictures. Thauma is built not to strobe (see [No strobing](#no-strobing)), but custom shaders
-> from elsewhere and extreme settings can still flash. If you or anyone watching is sensitive to
-> flashing light, take care.
+> **Photosensitivity warning.** Thauma makes strobing and flashing light. It is made for club and
+> rave shows, and it is not promised safe for anyone sensitive to flashing light. If you show it
+> to an audience, warn them. See [Flashing light](#flashing-light).
 
 ---
 
@@ -350,8 +349,7 @@ turn, drift and spin, and what comes back in from the edges (black, fold, tile o
 
 LFOs, drunk walks, step sequencers, envelopes, sound followers (level, bass, mids, highs, kick,
 snare and hats), maths modulators and XY pads can move any control, as many as you like. **Eight macros** each move several controls
-at once. Movement can follow tap tempo or a MIDI clock. Thauma limits how fast anything can
-change, so modulators never strobe.
+at once. Movement can follow tap tempo or a MIDI clock.
 
 ### Looks
 
@@ -450,16 +448,14 @@ In Settings (F7):
 
 ---
 
-## No strobing
+## Flashing light
 
-Thauma is built not to flash. A built-in check plays every shape type, trail style, stage,
-effect, starter look and modulator at its fastest. Anything that flashes more than three times a
-second (the photosensitivity guideline) fails. The one style that flickers by nature,
-**Flipbook**, has a **steady** switch that stops it.
+Thauma makes strobing and flashing light on purpose: it is made for club and rave shows, where
+strobes are part of the night. Nothing in Thauma makes it safe for people sensitive to flashing
+light, so do not show it to anyone on that promise, and warn your audience.
 
-Shaders from elsewhere were not made with that rule in mind. Try them at a few amounts before
-showing them to anyone. Also, a shader that loops forever can stall your graphics card until
-Windows resets it, so try new shaders before a show, not during one.
+A shader that loops forever can stall your graphics card until Windows resets it, so try new
+shaders before a show, not during one.
 
 ---
 
